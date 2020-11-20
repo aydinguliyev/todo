@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #03dfff;
+  background: linear-gradient(120deg, #03c9e7cb, #f81788);
+  height: 100vh;
+}
+
+#todo-box {
+  margin-left: 28%;
+}
+
+h1 {
+  margin-left: 28%;
+  margin-top: 3rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 35rem;
+}
+
+h3 {
+  width: 38rem;
+  color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.add-task {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.text {
+  font-size: 1rem;
+  color: #000000;
+}
+
+input {
+  border-radius: 1rem;
+  width: 57%;
+  height: 2rem;
+  margin: 2px;
+  border: none;
+  outline: none;
+  padding: 1rem;
+}
+
+input::placeholder {
+  position: relative;
+  left: 0.5rem;
+  color: #00000071;
+}
+
+ul {
+  width: 60%;
+  background-color: #fff;
+}
+
+li {
+  display: flex;
+  color: #fff;
+  background-color: #f81788;
+  margin: 0 0 0.2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.task {
+  margin-left: 0.5rem;
+}
+.actions > div,
+.add-btn {
+  color: #ffffffa2;
+}
+
+.actions > div:hover {
+  color: #fff;
+}
+
+.add-btn > i:hover,
+.add-btn > div:hover {
+  color: #fff;
+}
+
+.add-btn,
+.actions > div,
+.main > div {
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* 
+   iconlare irilme hoveri verende digeri terpenir 
+   sehifeni balacaladanda imput balacalashir ama list yox
+   */
