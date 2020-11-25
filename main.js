@@ -6,6 +6,14 @@ const notCompletedList = toDoBox.querySelector(".not-completed");
 const completedList = toDoBox.querySelector(".completed");
 
 addBtn.addEventListener("click", addToList);
+input.addEventListener("keyup", onEnter);
+
+function onEnter(event) {
+  console.log("keyadi", event.key);
+  if (event.keyCode === 13 || event.key === "Enter") {
+    addToList();
+  }
+}
 
 let list = [];
 let currentId = 1;
@@ -130,17 +138,3 @@ function complete(id) {
   });
   renderList();
 }
-
-/*
-function deleteTask(id) {
-  const index = list.findIndex(function (element) {
-    console.log("elementId", element.id, "id", id);
-    return element.id === id;
-  });
-  console.log(index);
-
-  if (index !== -1) {
-    list.splice(index, 1);
-    renderList();
-  }
-}*/
